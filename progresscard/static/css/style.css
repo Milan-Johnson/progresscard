@@ -1,0 +1,30 @@
+h1{
+    color: rgb(241, 242, 248);
+    text-align: center;
+}
+h2{
+    color: rgb(24, 241, 213);
+    font-weight: bolder;
+}
+body{
+    background: rgb(60, 214, 241);
+    padding-top: 20vh;
+}
+form{
+    
+    background:                                                                                                                                                                                                                                                            rgb(255, 255, 255);
+
+}
+.form-container{
+    border-radius: 10px;
+    padding: 30px;
+    border-width:  5px;
+}
+.form-control{
+    border-color:rgb(129, 193, 245);
+    border-width: 2px;
+    border-radius: 25px;
+}
+form.label1{
+    color: turquoise;
+}
