@@ -46,7 +46,7 @@ def signup(request):
                 print('user added')
                 return redirect('login')
         else:
-            messages.info(request,'password not marching..')
+            messages.info(request,'password not maching..')
             return redirect ('signup')
             
         return redirect('/')
@@ -54,3 +54,8 @@ def signup(request):
 
     else:   
         return render(request,'signup.html')
+
+
+def logout(request):
+    auth.logout(request)
+    return redirect('/')

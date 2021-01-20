@@ -17,16 +17,42 @@
 
          <form class="form-container" action="login" method="POST">
             {% csrf_token %}
-            <h2 class="text-center">LOGIN</h2>
-              <div class="mb-3">
-               <label for="username" class="form-label">User name</label>
-                <input type="text" class="form-control" name="username" placeholder="user_name" aria-describedby="emailHelp">
+            <h2 class="text-center">MARKS</h2>
+              <div class="row">  
+                <div class="mb-4">
+                    <label for="malayalam" class="form-label">Malayalam</label>
+                    <input type="text" class="form-control" name="malayalam" placeholder="marks" >
+                </div>
+
+                <div class="mb-4" >
+                    <label for="English" class="form-label">Engilsh</label>
+                    <input type="text" class="form-control" name="english" placeholder="marks">
+                </div>
+              </div>   
+
+              <div class="row">  
+                <div class="mb-4">
+                    <label for="Hindi" class="form-label">Hindi</label>
+                    <input type="text" class="form-control" name="hindi" placeholder="marks" >
+                </div>
+
+                <div class="mb-4" >
+                    <label for="Maths" class="form-label">Maths</label>
+                    <input type="text" class="form-control" name="maths" placeholder="marks">
+                </div>
               </div>
 
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" name="password" placeholder="xxxx">
-            </div>
+              <div class="row">  
+                <div class="mb-4">
+                    <label for="Science" class="form-label">Science</label>
+                    <input type="text" class="form-control" name="science" placeholder="marks" >
+                </div>
+
+                <div class="mb-4" >
+                    <label for="Socialscience" class="form-label">Social Science</label>
+                    <input type="text" class="form-control" name="socialscience" placeholder="marks">
+                </div>
+              </div>
           
             <button type="submit" class="btn btn-primary">Submit</button>
             
